@@ -12,10 +12,12 @@
 //        PINS 
 // ********************
 
-#define MQ135_PIN 34	// air quality sensor
-#define DHT_PIN 25		// humidity and temperature sensor
+#define MQ135_PIN 34	      // air quality sensor
+#define DHT_PIN 25		      // humidity and temperature sensor
 #define DHT_TYPE DHT11
-//#define HC_SR501_PIN 0	// movement sensor
+#define HC_SR501_PIN 13	    // movement sensor
+#define VOLTIMETER_PIN 34   // voltage meter
+#define ENERGY_METER_PIN 12 // amperage meter
 
 // ********************
 //        CONFIG
@@ -36,5 +38,5 @@ const unsigned long CHECK_WIFI_INTERVAL = 30000;
 //        GLOBALS
 // ********************
 
-StaticJSONDocument<200> data;
+StaticJsonDocument<200> data;
 
